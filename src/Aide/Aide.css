@@ -1,0 +1,27 @@
+.Aide{
+    width:600px;
+    height:350px;
+    background-color: lightgray;
+    border:1px black;
+}
+.Aide h2{
+    float:left;
+    margin-top:15px;
+    margin-left:15px;
+}
+.Aide h1{
+    float:left;
+    margin-top:40px;
+    margin-bottom: 25px;
+}
+hr{
+    margin-top:15px;
+}
+.LogoENSA2{
+    width:300px;
+    margin-left:160px;
+    margin-top:30px;
+}
+.AideFooter{
+    margin-top:15px;
+}

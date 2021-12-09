@@ -1,0 +1,66 @@
+
+
+
+.noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+          -webkit-tap-highlight-color: transparent;
+  }
+  
+  .name_noselect {
+      width: 350px;
+      height: 60px;
+      font-size: 20px;
+      font-weight: bold;
+      color: rgb(138, 130, 130);
+      background: white;
+      border: 2px solid rgb(109, 103, 103);
+      box-shadow: 5px 5px 0 rgb(110, 108, 108),
+          -5px -5px 0 rgb(110, 108, 108),
+          -5px 5px 0 rgb(110, 108, 108),
+          5px -5px 0 rgb(110, 108, 108);
+      transition: 500ms ease-in-out;
+      margin-bottom:30px;
+      margin-right:400px;
+      padding: 20px; 
+  }
+
+  #ActiveSession{
+    width: 350px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(77, 61, 61);
+    background: white;
+    border: 2px solid #6ccca5;
+    box-shadow: 5px 5px 0 #6ccca5,
+        -5px -5px 0 #6ccca5,
+        -5px 5px 0 #5dd8a7,
+        5px -5px 0 #46c08f;
+    transition: 500ms ease-in-out;
+    margin-bottom:30px;
+    margin-right:400px;
+    padding: 20px; 
+
+  }
+  
+  .name_noselect:hover {
+      box-shadow: 20px 5px 0 rgb(110, 108, 108), -20px -5px 0 rgb(110, 108, 108);
+  }
+
+  #ActiveSession:hover {
+    box-shadow: 20px 5px 0 #6ccca5, -20px -5px 0 #6ccca5;
+}
+  
+  .name_noselect:focus {
+      outline: none;
+  }
+
+  #ActiveSession:focus {
+    outline: none;
+}

@@ -1,0 +1,114 @@
+.Comment{
+   font-weight: lighter;
+   font-size:15px;
+   text-align: left;
+   margin-top: 80px;
+   margin-bottom:15px;
+   
+}
+
+.DemandeConsultation{
+        border: 1px solid #6687e0;
+        width: 600px;
+        height: 400px;
+}
+
+.DemandeFormConsultation{
+    height:100%;
+    padding:20px;
+    
+
+}
+
+.TitleDemande{
+   margin-bottom: 30px;
+}
+
+h4{
+    margin: 20px;
+    font-weight:lighter;
+    
+}
+.Envoyer{
+    margin: 15px;
+    float:right;
+}
+
+.dropbtn {
+    background-color: #8295e9;
+    color: white;
+    padding: 7px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 30px;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 65px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+
+  .Description{
+      width:400px;
+      height:100px;
+  }
+
+  .Envoyer{
+     position: relative;
+     border:1px solid black;
+     padding:5px;
+     cursor: pointer;
+  }
+
+  .NoteBien{
+    border: 1px solid #6687e0;
+    height:70px;
+    width:600px
+  }
+
+  .NB{
+    margin-bottom:0;
+    margin-top:3px;
+  }
+
+  .NBp{
+      margin-top:0;
+      font-weight: lighter;
+  }
+
+
+ 
