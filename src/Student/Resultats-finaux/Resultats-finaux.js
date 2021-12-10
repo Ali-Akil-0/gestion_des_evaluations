@@ -13,15 +13,15 @@ function Resultats_finaux() {
         </tr>
         <tr>
           <td>Programmation Web</td>
-          <td>21</td>
+          <td>14</td>
         </tr>
         <tr>
           <td>Systeme d'exploitation</td>
-          <td>22</td>
+          <td>16</td>
         </tr>
         <tr>
           <td>POO</td>
-          <td>23</td>
+          <td>15</td>
         </tr>
       </table>
     </>
