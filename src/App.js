@@ -12,10 +12,14 @@ import Prevenir from "./Teacher/Prevenir-examens/Prevenir-examen";
 import Surveillance from "./Teacher/Surveillance/Surveillance";
 import Etape2 from "./Teacher/Prevenir-examens/Etape-2/Etape-2";
 import DescriptionJour from "./Teacher/Surveillance/Description du jour/Description-jour";
+import Profil from "./Student/Profil/Profil";
+import PV from "./Teacher/PV_evaluation/PV";
+import PV2 from "./Teacher/PV_evaluation/PV2/PV2";
 //Importing the route and link methodes from the react-router-dom
 import { Route, Routes } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 import Navbar from "./Front/Navbar";
+
 
 function App() {
   return (
@@ -42,6 +46,9 @@ function App() {
           <Route path="/DemandeCopie" element={<Consultation_de_copie />} />;
           <Route path="/Etape2" element={<Etape2 />} />
           <Route path="/DescriptionJour" element={<DescriptionJour />} />
+          <Route path="/Profil" element={<Profil/>}/>
+          <Route path="/PV" element={<PV/>}/>
+          <Route path="/PV2" element={<PV2/>}/>
         </Routes>
       </div>
     </BrowserRouter>

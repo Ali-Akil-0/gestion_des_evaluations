@@ -1,0 +1,94 @@
+  .profile-img {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    margin-top: 100px;
+    margin-left: 100px;
+  }
+
+  .NomProfile{
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin-left:300px;
+      margin-top: 150px;
+      
+  }
+  .NomProfile hr{
+      border-width: 3px;
+  }
+  .InfoDetail{
+      margin: 0;
+      padding: 0;
+  }
+  .ProfilTable{
+      position: relative;
+      left: 0;
+      position: absolute;
+      padding: 0;
+      width: 100%;
+      border-spacing: 40px;
+      margin-bottom: 1000px;
+      
+  }
+  .ProfilTable td{
+      border-radius: 20px;
+      width: 20%;
+      text-align: left;
+      padding-top: 0px;
+  }
+  .InfoDetail{
+    border-style: ridge;
+      position: relative;
+      margin-top: 0px;
+      border: 1px solid black;
+      margin-left:20px;
+      margin-bottom: 90px;
+      border-radius: 20px;
+      padding:10px;
+      
+
+  }
+  .InfoCour{
+    border-style: double;
+    margin-top: 0px;
+    border: 1px solid black;
+    margin-left:20px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    padding:10px;
+
+  }
+  .InfoConexion{
+    border-style: ridge;
+    margin-top: 0px;
+    border: 1px solid black;
+    margin-left:20px;
+    margin-bottom: 120px;
+    border-radius: 20px;
+    padding:10px;
+  }
+  .ProfilTable td h2{
+      color: blue;
+      text-align: left;
+      margin-top: 0px;
+  }
+  .ProfilTable td h3{
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom:5px;
+    color: rgb(118, 118, 218);
+}
+  .ProfilTable  p{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    }
+    .ProfilTable .InfoCooexion {
+        margin-bottom: 70px;
+    }
+  
+  

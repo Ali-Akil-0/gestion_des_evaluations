@@ -1,0 +1,66 @@
+.PV2Title{
+    font-size:25px;
+    position:absolute;
+    top:0;
+    left:0;
+    margin-top:120px;
+    margin-left:110px;
+    font-weight:light;
+}
+.PVTable{
+    border-spacing: 40px;
+    margin-top: 150px;
+    
+}
+.PVTable div{
+    border-radius: 20px;
+    padding:10px;
+    
+    
+}
+.PVTable h2{
+    margin-bottom:30px;
+}
+
+.NbrEtudiants{
+    width: 300px;
+    border:1px solid black ;
+    background-color:#ffd966;
+   
+
+}
+.nmbreContainer{
+    display: flex;
+}
+
+.NbrCopies{
+    width: 300px;
+    border:1px solid black ;
+    background-color:#93c47d;
+
+}
+.Anomalies{
+    width: 300px;
+    border:1px solid black ;
+    background-color:#ea9999;
+
+}
+.numberCircle {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background: #fff;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+    font: 20px Arial, sans-serif;
+}
+.personIcon{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    font: 20px Arial, sans-serif;
+    margin-left: 100px;
+}

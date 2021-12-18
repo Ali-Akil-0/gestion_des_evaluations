@@ -1,9 +1,17 @@
 import React from 'react';
-import NavbarProf from '../../Navbar/Navbar';
-import './Etape-2.css';
+import './PV.css';
 import {AiFillCaretDown} from "react-icons/ai";
+import NavbarProf from '../Navbar/Navbar';
+import {
+  Nav,
+  NavLink,
+  Bars,
+  NavMenu,
+  NavBtn,
+  NavBtnLink
+} from './NavbarElements';
 
-function Etape2(){
+function PV(){
     return (
         <>
         <NavbarProf></NavbarProf>
@@ -22,16 +30,16 @@ function Etape2(){
 
               </span> 
           </h4>
-          <h4>Le mode souhaite de l’examen :
+          <h4> La salle d'évaluation :
 
           <span>
                   
                   <div class="dropdown">
-                  <button class="dropbtn">Présentiel <AiFillCaretDown/> </button>
+                  <button class="dropbtn">Salle 201 <AiFillCaretDown/> </button>
                   <div class="dropdown-content">
-                      <a href="#">Présentiel</a>
-                      <a href="#">A distance</a>
-                      <a href="#">Projet</a>
+                      <a href="#">Salle 005</a>
+                      <a href="#">Salle 003</a>
+                      <a href="#">Salle TP6</a>
                   </div>
                   </div>
   
@@ -39,36 +47,23 @@ function Etape2(){
 
            </h4> 
 
-           <h4>Possibilité de planification d’un contrôle presentielle :
-
+           <h4> Le jour d'évaluation :
             <span>
-            <button class="Oui">
-              Oui
-          </button>
-          <button class="Non">
-              Non
-          </button>
+            <input type="date" id="start" name="trip-start"
+            value="2018-07-22"
+             min="2018-01-01" max="2018-12-31"/>
             </span> 
 
             </h4> 
-            <h4>Besoin d’une salle de travaux pratique :
-
-            <span>
-            <button class="Oui">
-              Oui
-          </button>
-          <button class="Non">
-              Non
-          </button>
-            </span> 
-
-            </h4> 
-
+          
+          <NavLink to='/PV2' activeStyle>
           <button class="Envoyer">
-              Valider
+              Rechercher
           </button>
+          </NavLink>
+          
         </form>
         </>
       );
 }
-export default Etape2 ;
+export default PV ;

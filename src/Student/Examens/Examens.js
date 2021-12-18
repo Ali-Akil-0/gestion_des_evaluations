@@ -1,7 +1,6 @@
 import React from 'react';
 import NavbarStudent from '../Navbar/Navbar';
 import './Examens.css';
-import $ from 'jquery';
 import QRCode from 'qrcode.react';
 
 function Examens(){

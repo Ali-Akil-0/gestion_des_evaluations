@@ -97,17 +97,19 @@ h4{
   .NoteBien{
     border: 1px solid #6687e0;
     height:70px;
-    width:600px
+    width:600px;
+    background-color: rgb(207, 94, 94);
   }
 
   .NB{
     margin-bottom:0;
     margin-top:3px;
+    font-weight: bolder;
   }
 
   .NBp{
       margin-top:0;
-      font-weight: lighter;
+      font-weight: bold;
   }
 
 
