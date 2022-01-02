@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7b242ec1.chunk.css",
+    "main.js": "/static/js/main.7a849ec3.chunk.js",
+    "main.js.map": "/static/js/main.7a849ec3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b7d7c8ab.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b7d7c8ab.js.map",
+    "static/js/2.7a9d393e.chunk.js": "/static/js/2.7a9d393e.chunk.js",
+    "static/js/2.7a9d393e.chunk.js.map": "/static/js/2.7a9d393e.chunk.js.map",
+    "static/js/3.0effb059.chunk.js": "/static/js/3.0effb059.chunk.js",
+    "static/js/3.0effb059.chunk.js.map": "/static/js/3.0effb059.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.1f8b1d0c8c43489bb724eab6fc3d3871.js": "/precache-manifest.1f8b1d0c8c43489bb724eab6fc3d3871.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.7b242ec1.chunk.css.map": "/static/css/main.7b242ec1.chunk.css.map",
+    "static/js/2.7a9d393e.chunk.js.LICENSE.txt": "/static/js/2.7a9d393e.chunk.js.LICENSE.txt",
+    "static/media/Logo_ENSA.png": "/static/media/Logo_ENSA.9d71e72e.png",
+    "static/media/Professor_img.jpg": "/static/media/Professor_img.1fa4b426.jpg",
+    "static/media/Student_img.jpg": "/static/media/Student_img.3b406c08.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b7d7c8ab.js",
+    "static/js/2.7a9d393e.chunk.js",
+    "static/css/main.7b242ec1.chunk.css",
+    "static/js/main.7a849ec3.chunk.js"
+  ]
+}
