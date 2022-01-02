@@ -1,9 +1,38 @@
-import React from 'react';
+import React , {useEffect, useState} from "react";
 import NavbarProf from '../Navbar/Navbar';
 import './Surveillance.css' ; 
 import { Link } from "react-router-dom";
+import Axios from "axios";
 
 function Surveillance(){
+  const [resultModules1 , setResultModules1] =useState("") ; 
+  const [resultModules2 , setResultModules2] =useState("") ; 
+
+  var test = sessionStorage.getItem('email');
+  console.log("Testing attention please : "+test);
+  console.log("ABove is the test check it out");
+  Axios.post("http://localhost:3001/Surveillance", {
+    test:test ,
+  })
+  Axios.get("http://localhost:3001/Surveillance", { params: { answer: test } }).then(response => {
+    console.log("Ontop");
+    console.log(response.data[1]);
+    console.log("Ontop");
+    setResultModules1(response.data[0]);
+    setResultModules2(response.data[1]);
+
+
+    // setResultModules4(response.data[3]);
+    // setResultModules5(response.data[4]);
+  })
+
+  console.log("After etting the data  : "+resultModules1.Date);
+  console.log("After etting the data  2 : "+resultModules2.Date);
+  console.log(resultModules2.Date);
+  console.log("On top the second one ???");
+
+
+
     return (
         <>
         <NavbarProf></NavbarProf>
@@ -11,19 +40,19 @@ function Surveillance(){
         <table id="TabSurveillance">
         <tr>
           <th>Date</th>
-          <th>Heure</th>
+          <th>Heure de début</th>
           <th>Module</th>
-          <th>Prof du module</th>
+          <th>Responsable du module</th>
           <th>Salle</th>
           <th>Confirmation de presence</th>
           <th>Description du jour</th>
         </tr>
         <tr>
-          <td>20/10/2020</td>
-          <td>15:00</td>
-          <td>Programmation Web</td>
-          <td>Jaber BOUHDIDI</td>
-          <td>5</td>
+          <td>{resultModules1.Date}</td>
+          <td>{resultModules1.Heure}</td>
+          <td>{resultModules1.Module}</td>
+          <td>{resultModules1.Responsable}</td>
+          <td>{resultModules1.Salle}</td>
           <td>
            
           <div class="checkboxOverride">
@@ -42,11 +71,11 @@ function Surveillance(){
           </td>
         </tr>
         <tr>
-          <td>10/10/2020</td>
-          <td>13:30</td>
-          <td>POO</td>
-          <td>Zineb BESRI</td>
-          <td>103</td>
+        <td>{resultModules2.Date}</td>
+          <td>{resultModules2.Heure}</td>
+          <td>{resultModules2.Module}</td>
+          <td>{resultModules2.Responsable}</td>
+          <td>{resultModules2.Salle}</td>
           <td>
           <div class="checkboxOverride">
 	  		<input type="checkbox" name="" id="checkboxInputOverride2" value="2"/>

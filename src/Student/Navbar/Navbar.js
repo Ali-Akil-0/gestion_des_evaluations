@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{useEffect , useState} from "react";
 import {
     Nav,
     NavLink,
@@ -10,13 +10,32 @@ import {
 import './Navbar.css';
 import {AiFillBell} from "react-icons/ai";
 import {FiSmile} from "react-icons/fi";
+import  Axios from "axios";
 
 
 function NavbarStudent(){
+  const [resultModules1 , setResultModules1] =useState("") ; 
+  var test = sessionStorage.getItem('apoge');
+  console.log("Testing attention please : " + test);
+  Axios.post("http://localhost:3001/NavbarEtudiant/", {
+    test:test,
+  });
+  console.log("after");
+  Axios.get("http://localhost:3001/NavbarEtudiant/", { params: { answer: test } }).then(response => {
+    console.log("Ontop");
+    console.log(response.data[0]);
+    console.log("Ontop");
+    setResultModules1(response.data[0]);
+    })
+
+    console.log("Look below");
+    console.log(resultModules1.Message);
+    console.log("Look above");
+
   function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
-  
+
   // Close the dropdown if the user clicks outside of it
   window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
@@ -51,9 +70,7 @@ function NavbarStudent(){
                 <button class="dropbtn3"><AiFillBell size={20} /></button>
                 <div class="dropdown-content3">
                     <p>
-                    -Vous êtes convoqué au conseil de discipline
-                    <br/>
-                    -Votre convocation au examens est disponible
+                    {resultModules1.Message}
                     </p>
                 </div>
                 </div>

@@ -1,12 +1,25 @@
 {
   "name": "gestion_des_evaluations",
   "version": "0.1.0",
+  "type": "commonjs",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.24.0",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "emailjs-com": "^3.2.0",
+    "express": "^4.17.2",
+    "express-generator": "^4.16.1",
     "jquery": "^3.6.0",
+    "jspdf": "^2.5.0",
+    "jspdf-autotable": "^3.5.23",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.15",
     "qrcode.react": "^1.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -17,7 +30,7 @@
     "styled-components": "^5.3.3"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
+    "start": "react-scripts --openssl-legacy-provider  start",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

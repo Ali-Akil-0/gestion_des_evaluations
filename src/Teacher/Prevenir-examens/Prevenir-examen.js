@@ -4,6 +4,9 @@ import './Prevenir-examen.css';
 import { Link } from "react-router-dom";
 
 function Prevenir(){
+  var test = sessionStorage.getItem('module2');
+  console.log("Testing attention please : "+test);
+  console.log("ABove is the test check it out");
     return (
         <>
         <NavbarProf></NavbarProf>

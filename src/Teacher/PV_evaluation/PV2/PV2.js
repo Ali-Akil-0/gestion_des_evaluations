@@ -11,7 +11,7 @@ function PV2(){
         <>
         <NavbarProf></NavbarProf>
         <h1 class="PV2Title">
-        PV d’évaluation du Module Modélisation UML et POO au niveau de la salle 201 le 10/12/2021
+        PV d’évaluation du Module au niveau de la salle 201, le 10/12/2021
         </h1>
         <table class="PVTable">
               <td>
@@ -22,7 +22,6 @@ function PV2(){
                  <div class="personIcon">
                  <BsPersonSquare size={30}/>
                  </div>
-                     
                 </div>
                 
              </div>

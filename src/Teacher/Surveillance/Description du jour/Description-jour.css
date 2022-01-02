@@ -1,7 +1,34 @@
 .SmallText{
-    width: 40px;
+    width: 100px;
     margin-left:40px;
+    background-color:#ea9999 ;
+    border-radius: 20px;
+    border: 1px solid;
+    padding:10px;
 }
 .DemandeForm2{
     padding-top:20px;
+    height:400px;
+}
+
+.Envoyer3{
+    margin-top: 40px;
+}
+.TitleDemande{
+    margin-top:30px;
+}
+.testButton{
+    margin-top:100px;
+}
+.Anomalies{
+    height:50px;
+    margin-bottom: 20px;
+}
+.Anomalies2{
+    height:60px;
+    margin-bottom: 10px;
+
+}
+.Description2{
+    margin-top:20px;
 }

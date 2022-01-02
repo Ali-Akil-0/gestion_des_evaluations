@@ -24,6 +24,7 @@
   .InfoDetail{
       margin: 0;
       padding: 0;
+      width: 300px;
   }
   .ProfilTable{
       position: relative;
@@ -32,45 +33,26 @@
       padding: 0;
       width: 100%;
       border-spacing: 40px;
-      margin-bottom: 1000px;
+      margin-bottom: 10px;
       
   }
   .ProfilTable td{
-      border-radius: 20px;
+      border-radius: 10px;
       width: 20%;
       text-align: left;
       padding-top: 0px;
   }
   .InfoDetail{
-    border-style: ridge;
+      border-style: ridge;
       position: relative;
-      margin-top: 0px;
       border: 1px solid black;
-      margin-left:20px;
+      margin-left:10px;
+
       margin-bottom: 90px;
-      border-radius: 20px;
-      padding:10px;
-      
-
-  }
-  .InfoCour{
-    border-style: double;
-    margin-top: 0px;
-    border: 1px solid black;
-    margin-left:20px;
-    margin-bottom: 50px;
-    border-radius: 20px;
-    padding:10px;
-
-  }
-  .InfoConexion{
-    border-style: ridge;
-    margin-top: 0px;
-    border: 1px solid black;
-    margin-left:20px;
-    margin-bottom: 120px;
-    border-radius: 20px;
-    padding:10px;
+      border-radius: 10px;
+      padding:30px;
+      height: 270px;
+      width: 350px;
   }
   .ProfilTable td h2{
       color: blue;

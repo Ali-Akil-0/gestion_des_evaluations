@@ -20,18 +20,17 @@ import { Route, Routes } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 import Navbar from "./Front/Navbar";
 
-
 function App() {
   return (
     // On ajoute un lien pour toutes les pages
-    // exact to not use a weird routing method
     // React route has been updated
     //Routes instead of Switch
     // Path instead of to
     // elements instead of component
-
+     <>
     <BrowserRouter>
       <div className="App">
+        
         <Routes>
           <Route path="/" element={<Navbar />} />
           <Route path="/Student" element={<Student />} />
@@ -46,12 +45,13 @@ function App() {
           <Route path="/DemandeCopie" element={<Consultation_de_copie />} />;
           <Route path="/Etape2" element={<Etape2 />} />
           <Route path="/DescriptionJour" element={<DescriptionJour />} />
-          <Route path="/Profil" element={<Profil/>}/>
-          <Route path="/PV" element={<PV/>}/>
-          <Route path="/PV2" element={<PV2/>}/>
+          <Route path="/Profil" element={<Profil />} />
+          <Route path="/PV" element={<PV />} />
+          <Route path="/PV2" element={<PV2 />} />
         </Routes>
       </div>
     </BrowserRouter>
+    </>
   );
 }
 

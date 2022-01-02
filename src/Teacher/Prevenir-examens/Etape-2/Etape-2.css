@@ -1,6 +1,18 @@
 
+.MarginDownDev{
+  margin-top:150px;
+  width:603px;
+  border:1px solid;
+  border-color: #588df6;
+}
+.DemandeForm2{
+  height: 100%;
+}
+.title2{
+  margin-top:100;
+}
 .DemandeForm{
-    margin-top:100px;
+    margin-top:50px;
     
 }
 .Non{
@@ -11,4 +23,40 @@
     padding: 5px;
     margin: 10px;
     margin-left: 20px;
+}
+.Envoyer3{
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+
+.Envoyer3 {background-image: linear-gradient(to right, #5c95bb 0%, #8a7eb6  51%, #173950  100%)}
+.Envoyer3{
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .Envoyer3:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+   cursor: pointer;
+ }
+ .Envoyer3:active {
+  margin-top: 20px;
+} 
+.Oui{
+   background-color: #8295e9;
+}
+.Non{
+  background-color:#8295e9 ;
+
 }
