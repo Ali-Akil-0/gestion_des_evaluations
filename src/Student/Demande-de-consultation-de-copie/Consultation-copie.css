@@ -11,6 +11,8 @@
   letter-spacing: 1px;
   text-align:center;
   margin-bottom: 40px;
+  cursor:pointer;
+
 }
 .Comment{
    font-weight: lighter;
@@ -126,7 +128,8 @@ h4{
   }
   .Envoyer2{
     padding:10px;
-    background-color:linea
+    background-color:linea ; 
+    cursor: pointer;
   }
 
   .Envoyer2 {background-image: linear-gradient(to right, #5c95bb 0%, #8a7eb6  51%, #173950  100%)}

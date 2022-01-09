@@ -18,7 +18,10 @@ function DescriptionJour(){
         }).then(()=>{
             console.log("successful insert");
         });
+        sessionStorage.setItem('NbrEtudiants' ,[NbrEtudiants]);
+        sessionStorage.setItem('NbrCopies' ,[NbrCopies]);
     };
+
     return (
         <>
         <NavbarProf></NavbarProf>

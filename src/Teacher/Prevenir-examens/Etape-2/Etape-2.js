@@ -4,6 +4,7 @@ import "./Etape-2.css";
 import { AiFillCaretDown } from "react-icons/ai";
 import Axios from "axios";
 function Etape2() {
+  const The_module = sessionStorage.getItem('module2');
   // the second
   const [Module, setModule] = useState("");
   const [Mode, setMode] = useState("");
@@ -31,23 +32,11 @@ function Etape2() {
               <select
                 class="ModuleConsultation"
                 name="Module"
-                onChange={(e) => {
+                onClick={(e) => {
                   setModule(e.target.value);
                 }}
               >
-                <option disabled selected value="">
-                  {""}
-                  ---- Sélectionner ----{" "}
-                </option>
-                <option value="Analyse">Analyse 1</option>
-                <option value="Physique">Physique 1</option>
-                <option value="Algebre1">Algebre 1</option>
-                <option value="Mecanique">Mécanique</option>
-                <option value="Electronique">Electronique</option>
-                <option value="TEC">TEC</option>
-                <option value="Anglais">Anglais</option>
-                <option value="Espagnol">Espagnol</option>
-                <option value="ProgrammationWeb">ProgrammationWeb</option>
+                <option value={The_module}>{The_module}</option>
               </select>
             </span>
           </h4>
@@ -65,12 +54,12 @@ function Etape2() {
                   {""}
                   ---- Sélectionner ----{" "}
                 </option>
-                <option value="Analyse">Examen écrit</option>
-                <option value="Physique">Examen (travaux pratiques)</option>
-                <option value="Algebre1">Examen oral (ou présentation)</option>
-                <option value="Algebre2">Projet (ou mini-projet)</option>
-                <option value="Algebre3">Certification (entité externe)</option>
-                <option value="Algebre3">QROC</option>
+                <option value="Examen_écrit">Examen écrit</option>
+                <option value="Examen_TP">Examen (travaux pratiques)</option>
+                <option value="Examen_oral">Examen oral (ou présentation)</option>
+                <option value="Projet">Projet (ou mini-projet)</option>
+                <option value="Certification">Certification (entité externe)</option>
+                <option value="QROC">QROC</option>
 
 
               </select>

@@ -4,9 +4,8 @@
     top:0;
     left:0;
     margin-top:120px;
-    margin-left:110px;
     font-weight:light;
-    margin-left: 300px;
+    margin-left: 250px;
 }
 .PVTable{
     border-spacing: 40px;
@@ -52,20 +51,52 @@
 }
 .numberCircle {
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     padding: 10px;
     background: #fff;
     border: 2px solid #666;
     color: #666;
     text-align: center;
     font: 20px Arial, sans-serif;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin-left: 30px;
+
 }
 .personIcon{
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     padding: 10px;
     text-align: center;
     font: 20px Arial, sans-serif;
-    margin-left: 100px;
+    margin-left: 60px;
+}
+.numberCircle1 {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    background: #fff;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+    font: 20px Arial, sans-serif;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin-top: 30px;
+    margin-left: 30px;
+
+
+}
+.personIcon1{
+    width: 60px;
+    padding: 10px;
+    text-align: center;
+    font: 20px Arial, sans-serif;
+    margin-left: 60px;
+    margin-top: 30px;
+
 }

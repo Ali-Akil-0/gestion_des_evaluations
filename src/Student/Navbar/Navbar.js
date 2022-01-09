@@ -17,6 +17,8 @@ function NavbarStudent(){
   const [resultModules1 , setResultModules1] =useState("") ; 
   var test = sessionStorage.getItem('apoge');
   console.log("Testing attention please : " + test);
+  
+  useEffect(() => {
   Axios.post("http://localhost:3001/NavbarEtudiant/", {
     test:test,
   });
@@ -27,6 +29,7 @@ function NavbarStudent(){
     console.log("Ontop");
     setResultModules1(response.data[0]);
     })
+  },[])
 
     console.log("Look below");
     console.log(resultModules1.Message);

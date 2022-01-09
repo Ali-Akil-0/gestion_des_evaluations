@@ -2,21 +2,23 @@ import React, { useState } from "react";
 import NavbarStudent from "../Navbar/Navbar";
 import "./Consultation-copie.css";
 import { AiFillCaretDown } from "react-icons/ai";
-import { Axios } from "axios";
+import  Axios  from "axios";
 
 function Consultation_copie() {
   const [module, setModule] = useState("");
   const [responsable, setResponsable] = useState("");
   const [Description, setDescription] = useState("");
+  console.log("here");
 
   const submitReview2 = () => {
-    Axios.post("http://localhost:3001/", {
+    Axios.post("http://localhost:3001/Convocation4", {
       module: module,
       responsable: responsable,
       Description: Description,
-    }).then(() => {
+    },[]).then(() => {
       console.log("successful insert");
-    });
+    },[]);
+    console.log("Done");
   };
   return (
     <>
@@ -43,15 +45,16 @@ function Consultation_copie() {
                   {""}
                   ---- Sélectionner ----{" "}
                 </option>
-                <option value="Analyse">Analyse 1</option>
-                <option value="Physique">Physique 1</option>
-                <option value="Algebre1">Algebre 1</option>
-                <option value="Mecanique">Mécanique</option>
-                <option value="Electronique">Electronique</option>
+                <option value="GL">GL</option>
+                <option value="RI2">RI2</option>
+                <option value="UML">Modélisation et POO</option>
+                <option value="Java">Java</option>
+                <option value="PLSQL">PL/SQL</option>
+                <option value="AdministrationBD<">Administration BD</option>
+                <option value="TI">Traitement d'image</option>
                 <option value="TEC">TEC</option>
                 <option value="Anglais">Anglais</option>
                 <option value="Espagnol">Espagnol</option>
-                <option value="ProgrammationWeb">ProgrammationWeb</option>
               </select>
               </span>
             </span>
@@ -73,11 +76,15 @@ function Consultation_copie() {
                   {""}
                   ---- Sélectionner ----{" "}
                 </option>
-                <option value="Prof1">Prof 1</option>
-                <option value="Prof2">Prof 2</option>
-                <option value="Prof3">Prof 1</option>
-                <option value="Prof4">Prof 4</option>
-                <option value="Prof5">Prof 5</option>
+                <option value="Prof.CHKOURI">Prof CHKOURI</option>
+                <option value="Prof.ABTOY">Prof ABTOY</option>
+                <option value="Prof.BESRI">Prof BESRI</option>
+                <option value="Prof.BENTAJER">Prof BENTAJER</option>
+                <option value="Prof.MEDOURI">Prof MEDOURI</option>
+                <option value="Prof.NEJJARI">Prof NEJJARI</option>
+                <option value="Prof.MALLA_HUSSEIN">Prof MALLA HUSSEIN</option>
+
+
               </select>
             </span>
             </h4>
@@ -96,7 +103,7 @@ function Consultation_copie() {
             />
           </div>
           <div onClick={submitReview2} class="EnvoyerButton">
-            <button class="Envoyer2 someButton" onClick={submitReview2}>
+            <button type="button" class="Envoyer2 someButton">
               Envoyer
             </button>
           </div>

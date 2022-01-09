@@ -3,6 +3,7 @@ import NavbarStudent from "../Navbar/Navbar";
 import "./Profil.css";
 import Profile from "./Placeholder.jpg";
 import  Axios from "axios";
+import image from "./back.jpg";
 
 function Profil() {
   const [resultModules1 , setResultModules1] =useState("") ; 
@@ -55,7 +56,7 @@ function Profil() {
       <table class="ProfilTable">
         <tr>
           <td>
-            <div class="InfoDetail">
+            <div class="InfoDetail DivColor1">
               <h2>Informations détailées</h2>
               <h3> Adresse de courriel</h3>
               <p>{resultEmail.EmailInstitutionnel}</p>
@@ -66,7 +67,7 @@ function Profil() {
             </div>
           </td>
           <td>
-            <div class="InfoDetail">
+            <div class="InfoDetail DivColor2">
               <h2>Informations détaillées des cours</h2>
               <h3> Profils de cours</h3>
               <p>
@@ -80,12 +81,12 @@ function Profil() {
             </div>
           </td>
           <td>
-            <div class="InfoDetail">
+            <div class="InfoDetail DivColor3">
               <h2>Informations de connexion</h2>
               <h3> Premier accès au site</h3>
-              <p>Vendredi 10 Décembre 2021, 00:00 (maintenant)</p>
+              <p>Vendredi 10 Décembre 2021, 00:03 </p>
               <h3> Dernier accès au site</h3>
-              <p>Vendredi 30 Octobre 2020, 00:00(1 an 40 jours)</p>
+              <p>Mercredi 04 Janvier 2022, 09:00</p>
             </div>
           </td>
         </tr>

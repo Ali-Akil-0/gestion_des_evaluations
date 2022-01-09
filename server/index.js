@@ -37,15 +37,19 @@ app.get("/etudiant", (req, res) => {
 });
 
 //  Global
-app.post("/", (req, res) => {
+app.get("/Convocation4", (req, res) => {
+      res.send("what");
+})
+app.post("/Convocation4", (req, res) => {
   const module = req.body.module;
   const responsable = req.body.responsable;
   const Description = req.body.Description;
+  console.log("receiving anything ???");
   const sqlInsert =
     "Insert into consultationcopie(module,responsable,Description) values(?,?,?)";
-
   db.query(sqlInsert, [module, responsable, Description], (err, result) => {
     res.send("hello world");
+    console.log("done ???");
   });
 });
 // Professeur

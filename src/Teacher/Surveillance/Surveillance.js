@@ -20,17 +20,19 @@ function Surveillance(){
     console.log("Ontop");
     setResultModules1(response.data[0]);
     setResultModules2(response.data[1]);
-
-
     // setResultModules4(response.data[3]);
     // setResultModules5(response.data[4]);
   })
+   sessionStorage.setItem('resultModules1' ,[resultModules1]);
+   sessionStorage.setItem('resultModules1' ,[resultModules1]);
+   sessionStorage.setItem('resultModules1.Date' ,[resultModules1.Date]);
+
+
 
   console.log("After etting the data  : "+resultModules1.Date);
   console.log("After etting the data  2 : "+resultModules2.Date);
   console.log(resultModules2.Date);
   console.log("On top the second one ???");
-
 
 
     return (
@@ -48,11 +50,12 @@ function Surveillance(){
           <th>Description du jour</th>
         </tr>
         <tr>
-          <td>{resultModules1.Date}</td>
+          <td >{resultModules1.Date}</td>
           <td>{resultModules1.Heure}</td>
-          <td>{resultModules1.Module}</td>
+          <td value={resultModules1.Module}>{resultModules1.Module}</td>
           <td>{resultModules1.Responsable}</td>
           <td>{resultModules1.Salle}</td>
+
           <td>
            
           <div class="checkboxOverride">
